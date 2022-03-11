@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>HTML Heading Example</title>
+ <meta charset="UTF-8">
+ <meta name="description" content="Web Design Tutorials by SET">
+ <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, jQuery">
+ <meta name="author" content="Shahlal Hossain">
+ <link rel="stylesheet" href="mystyle.css">
+ <link rel="stylesheet" href="custom.css">
+ <script type="text/javascript" src="jquery.js"></script>
+ <script type="text/javascript" src="custom.js"></script>
+ <style>
+    #header {
+    display:block;
+    background-color:#BBC;
+    height:10%;
+    width:100%;
+    font-family:Arial;
+    text-align:center;
+    }
+    #nav {
+    height:200px;
+    background-color:purple;
+    width:30%;
+    float:left;
+    color:#FFF;
+    }
+    .main {
+    float:right;
+    width:100%;
+    height:80%;
+    }
+    #footer {
+    width:100%;
+    height:10%;
+    background:#000;
+    color:#fff;
+    position:relative;
+    clear:both;
+    padding: 10px;
+    }
+    </style>
+   
+</head>
+<body>
+ <h1>Un-Order List এর উ(হরণা</h1>
+ <hr>
+ <h4>Disc Type list</h4>
+ <ul type="disc">
+ <li>Home</li>
+ <li>About Us</li>
+ <li>Contact Us</li>
+ </ul>
+ <h4>Circle Type list</h4>
+ <ul type="circle">
+ <li>HTML</li>
+ <li>CSS</li>
+ <li>PHP</li>
+ </ul>
+ <h4>Square Type list</h4>
+ <ul type="square">
+ <li>Pragaph</li>
+ <li>Table</li>
+ <li>List</li>
+ </ul>
+ <h1>Ordered List এর উ(হরণা</h1>
+ <hr>
+ <h3>Alphabet Type list</h3>
+ <ol type="A">
+ <li>Home</li>
+ <li>About Us</li>
+ <li>Contact Us</li>
+ </ol>
+ <h3>Number Type list</h3>
+ <ol type="1">
+ <li>HTML</li>
+ <li>CSS</li>
+ <li>PHP</li>
+ </ol>
+ <h3>Roman Number Type list</h3>
+ <ol type="I">
+ <li>Pragaph</li>
+ <li>Table</li>
+ <li>List</li>
+ </ol>
+ <h1>Definition List এর উ(হরণা</h1>
+ <hr>
+ <dl>
+ <dt>UK</dt>
+ <dd>United Kingdom</dd>
+ <dt>USA</dt>
+ <dd>United States of America</dd>
+ </dl>
+ <p>
+    <b> (Bold)</b> This is an example of bold. <br />
+    <i>(Italic)</i> This is an example of Italic. <br />
+    <u> (Underline) </u> This is an example of Underline. <br />
+    <strike>(Strike) </strike> This is an example of Strike. <br />
+    (CO<sub>2</sub>) This is an example of Subscript. <br />
+    (E=MC<sup>2</sup>) This is an example of Superscript. <br />
+    <big>(Big text)</big>This is an example of Big. <br />
+    <small>(Small text)</small>This is an example of Small. <br />
+    <strong>(Strong text)</strong>This is an example of Strong. <br />
+    <samp>(Sample text) </samp>This is an example of Sample. <br />
+    <tt>(Teletype)</tt>This is an example of Teletype. <br />
+    (<abbr> U.N.O</abbr> United Nations Organization.) This is an example of Abbreviation. <br />
+    (<var>x</var> is a variable.)This is an example of Variable <br />
+    (<code>Computer code text.</code>) This is an example of Code.<br />
+    <address>
+    (Written by Shahlal Hossain<br />
+    Address: 80/C, Khilkhet, Dhaka<br />
+    E-mail:ashimkumar50@yahoo.com)</address>This is an example of Address <br />
+    </p>
+ <div id="header"><h1>This is a header</h1></div>
+ <div id="nav"><h2>This is Sidebar</h2></div>
+ <div class="main"></div>
+ <div id="footer"><p>This is Footer</p></div>
+ <table border="1" width="300" height="100">
+    <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Address</th>
+    </tr>
+    <tr>
+    <td>Masuma Akter</td>
+    <td>50</td>
+    <td>Dhaka</td>
+    </tr>
+    <tr>
+    <td>Rashed Khan</td>
+    <td>55</td>
+    <td>Khulna</td>
+    </tr>
+    </table>
+    <form action="/process.php" method="GET/POST" enctype="mutlipart/form-data">
+        First name: <input type = "text" name = "first_name"/>
+        Last name: <input type = "text" name = "last_name"/>
+        Input Type color: <input type="color" name="favcolor"><br>
+        Input Type Date: <input type="date" name="bday"><br>
+        Input Type (date and time): <input type="datetime-local" name="bdaytime"><br>
+        Input Type E-mail: <input type="email" name="email"><br>
+        Input Type Month: <input type="month" name="bdaymonth"><br>
+        Input Type Number: <input type="number" name="quantity" min="1" max="5"><br>
+        Input Type Range: <input type="range" name="points" min="0" max="10"><br>
+        Input Type Search: <input type="search" name="googlesearch"><br>
+        Input Type Telephone: <input type="tel" name="usrtel"><br>
+        Input Type Time: <input type="time" name="usr_time"><br>
+        Input Type URL: <input type="url" name="homepage"><br>
+        Input Type Week: <input type="week" name="week_year">
+        Password: <input type = "password" name = "password"/>
+        Description :
+        <textarea name = "description" rows = "5" cols = "50">
+        Enter description here...
+        </textarea>
+        <!-- Checkbox Control  -->
+        <input type ="checkbox" name="subject[]" value ="bangla"> Bangla
+        <input type ="checkbox" name="subject[]" value ="english"> English
+        <input type="checkbox" name="subject[]" value="math"> Math
+        <!-- Radio Button Control -->
+        <input type ="radio" name ="subject" value ="math"> Math
+        <input type ="radio" name ="subject" value ="physics"> Physics
+        <input type ="radio" name ="subject" value ="chemistry"> Chemistry
+        <input type="radio" name="subject" value="biology"> Biology
+        <!-- Select Box Control -->
+        <select name ="dropdown">
+            <option value ="Math" selected>Math</option>
+            <option value ="Physics">Physics</option>
+            <option value="Bangla">Bangla</option>
+        </select>
+        <select>
+            <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            </optgroup>
+        </select>   
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+        </datalist>
+        <input type = "file" name ="profile_picture" accept ="image/*" />
+        <input type ="submit" name ="submit" value ="Submit"/>
+        <input type ="reset" name ="reset" value ="Reset"/>
+        <input type ="button" name ="ok" value ="OK"/>
+        <input type ="image" name ="imagebutton" src="./images/shahlal.jpg"/>
+        <input type ="hidden" name ="pagename" value ="10"/>
+        <input type ="submit" name ="submit" value ="Submit"/>
+        <input type ="reset" name ="reset" value ="Reset"/>
+        <fieldset>
+            <legend>Personal Information:</legend>
+            Name: <input type="text"><br>
+            Email: <input type="text"><br>
+            Date of birth: <input type="date">
+        </fieldset>           
+        <input type="submit">
+
+
+    </form>
+ <script type="text/javascript" src="jquery.js"></script>
+ <script type="text/javascript" src="custom.js"></script>
+</body>
+</html>
