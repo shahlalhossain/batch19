@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>HTML Text Form Example</title>
+
+        <meta charset="UTF-8"> <!-- Character Set নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Browser Compatibility আনতে ব্যবহার করা হয়। -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Web Page কে Responsive করতে ব্যবহার করা হয়। -->
+        <meta name="description" content="Web Design Tutorials by SET2020"> <!-- Web Page এর Description দিতে ব্যবহার করা হয় -->
+        <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, jQuery"> <!-- Search Engine এর জন্য Key Words নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta name="author" content="Shahlal Hossain"> <!-- Page এর Creator এর পরিচয় নির্দেশ করতে ব্যবহার করা হয়। -->
+
+        <!-- এক্সটারনাল স্টাইলশিটকে লিঙ্ক করার জন্য <link> এলিমেন্ট ব্যবহার করা হয়। -->
+        <!-- CSS Library -->
+        <link type="text/css" rel="stylesheet" href="bootstrap.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="w3.css"> <!-- Example Only -->
+       
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="mystyle.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="custom.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="main.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="layout.css"> <!-- Example Only -->
+
+        <!-- Internal CSS Code লিখতে <style></style> Section ব্যবহার করা হয়। -->
+        <style type="text/css">
+            
+            body { 
+                background-color: gainsboro;
+            }
+
+            #main-content {
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 100px;
+            }
+
+            /* input[type=text] {
+                width: 50%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+            }
+
+            input[type=email] {
+                width: 50%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+            }
+
+            input[type=password] {
+                width: 50%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+            } */
+
+            
+        </style>
+
+    </head>
+    
+    <body>
+
+        <h1 id="page-title" style="text-align: center;">HTML Form Example</h1>
+        
+        <p id="page-description" style="text-align: center;">
+            This is my first web page. I am learning now HTML.
+        </p>
+        
+
+        <hr>
+
+        <div id="main-content">
+            
+            <form >
+                
+                <fieldset>
+                    <legend><h3>Basic HTML Input Type</h3></legend>
+
+                    <label for="user-name"> Input Type Text:</label>
+                    <input type="text" name="user_name" id="user-name"><br><br>
+    
+                    <label for="user-email">Input Type E-mail:</label>
+                    <input type="email" name="email" id="user-email"><br><br>
+                    
+
+                    <label for="password">Input Type Password</label>
+                    <input type="password" name="password" id="password"><br><br>
+
+                    <label>Input Type Number: </label>
+                    <input type="number" name="quantity" min="1" max="5"><br><br>
+    
+                    <label>Input Type Range: </label>
+                    <input type="range" name="points" min="0" max="10"><br><br>
+                   
+                    Input Type Date: <input type="date" name="date"><br><br>
+    
+                    Input Type Time: <input type="time" name="usr_time"><br><br>
+                    
+                    Input Type (Date and Time): <input type="datetime-local" name="date_time"><br><br>
+
+                    Input Type Textarea: <br>
+                    <textarea name="description" id="description" cols="100" rows="5"></textarea>
+
+                    <input type="hidden" name="user_id" id="user-ID" value="123456789"><br><br>
+
+       
+                    <label>Input Type Checkbox: </label>
+                    <input type="checkbox" name="subject[]" value ="bangla"> Bangla
+                    <input type="checkbox" name="subject[]" value ="english"> English
+                    <input type="checkbox" name="subject[]" value="math"> Math
+                    <input type="checkbox" name="subject[]" value="physics"> Physics
+                    <input type="checkbox" name="subject[]" value="chemestry"> Chemestry
+                    <input type="checkbox" name="subject[]" value="biology"> Biology
+                    <br><br>
+
+
+                    <label>Input Type Radio Button: </label>
+                    <input type="radio" name="colour" value="red"> Red
+                    <input type="radio" name="colour" value="green"> Green
+                    <input type="radio" name="colour" value="yellow"> Yellow
+                    <input type="radio" name="colour" value="blue"> Blue
+                    <input type="radio" name="colour" value="purple"> Purple
+                    <input type="radio" name="colour" value="black"> Black
+                    <input type="radio" name="colour" value="white"> White
+                    <br><br>
+
+
+                    <label>Input Type Select Option</label>
+                    <select name="district" id="district">
+                        <option value="">Select District</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="Bogra">Bogra</option>
+                        <option value="Chittagong">Chittagong</option>
+                        <option value="Barisha">Barisha</option>
+                        <option value="Sylhet">Sylhet</option>
+                        <option value="Faridpur">Faridpur</option>
+                        <option value="Rajshahi" selected="selected">Rajshahi</option>
+                        <option value="Pabna">Pabna</option>
+                        <option value="Gazipur">Gazipur</option>
+                        <option value="Rangpur">Rangpur</option>
+                        <option value="Feni">Feni</option>
+                    </select>
+                    <br><br>
+
+
+                    <label>Input Type Image:</label>
+                    <input type="file" name="profile_picture" accept="image/*" />
+                    <br><br>
+
+                    <label>Input Type Button:</label>
+                    <input type="button" name="ok" value="OK"/>
+                    <input type="reset" name="reset" value="Reset"/>
+                    <input type="submit" name="submit" value="Submit"/>
+
+                </fieldset>
+    
+            </form>
+
+        </div>
+
+        <!-- জাভাস্ক্রিপ্ট (JavaScript) জেকুয়েরি (jQuery) ইত্যাদি স্ক্রিপ্ট যুক্ত করার জন্য <script></script> ট্যাগ ব্যবহার করা হয়। -->
+        <!-- JavaScript Library -->
+        <script type="text/javascript" src="jquery.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="bootstrap.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="w3.js"></script> <!-- Example Only -->
+
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="myscript.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="custom.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="main.js"></script> <!-- Example Only -->
+
+
+    </body>
+</html>
+

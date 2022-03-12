@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>CSS Borders</title>
+
+        <meta charset="UTF-8"> <!-- Character Set নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Browser Compatibility আনতে ব্যবহার করা হয়। -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Web Page কে Responsive করতে ব্যবহার করা হয়। -->
+        <meta name="description" content="Web Design Tutorials by SET2020"> <!-- Web Page এর Description দিতে ব্যবহার করা হয় -->
+        <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, jQuery"> <!-- Search Engine এর জন্য Key Words নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta name="author" content="Shahlal Hossain"> <!-- Page এর Creator এর পরিচয় নির্দেশ করতে ব্যবহার করা হয়। -->
+
+        <!-- এক্সটারনাল স্টাইলশিটকে লিঙ্ক করার জন্য <link> এলিমেন্ট ব্যবহার করা হয়। -->
+        <!-- CSS Library -->
+        <link type="text/css" rel="stylesheet" href="bootstrap.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="w3.css"> <!-- Example Only -->
+       
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="mystyle.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="custom.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="main.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="layout.css"> <!-- Example Only -->
+
+        <!-- Internal CSS Code লিখতে <style></style> Section ব্যবহার করা হয়। -->
+        <style type="text/css">
+
+            #main-content {
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 100px;
+            }
+
+            p.dotted { border-style: dotted; }
+            p.dashed { border-style: dashed; }
+            p.solid { border-style: solid; }
+            p.double { border-style: double; }
+            p.groove { border-style: groove; }
+            p.ridge { border-style: ridge; }
+            p.inset { border-style: inset; }
+            p.outset { border-style: outset; }
+            p.none { border-style: none; }
+            p.hidden { border-style: hidden; }
+            p.mix { border-style: dotted dashed solid double; }
+
+
+            p.one {
+                border-style: solid;
+                border-width: 5px;
+            }
+
+            p.two {
+                border-style: solid;
+                border-width: medium;
+            }
+
+            p.three {
+                border-style: dotted;
+                border-width: 2px;
+            }
+
+            p.four {
+                border-style: dotted;
+                border-width: thick;
+            }
+
+            p.five {
+                border-style: double;
+                border-width: 15px;
+            }
+
+            p.six {
+                border-style: double;
+                border-width: thick;
+            }
+
+
+            p.red {
+                border-style: solid;
+                border-color: red;
+            }
+
+            p.green {
+                border-style: solid;
+                border-color: green;
+            } 
+
+            p.dotted {
+                border-style: dotted;
+                border-color: blue;
+            }
+
+
+            p.normal {
+                border: 2px solid green;
+                padding: 5px;
+            }
+
+            p.round1 {
+                border: 2px solid green;
+                border-radius: 5px;
+                padding: 5px;
+            }
+
+            p.round2 {
+                border: 2px solid green;
+                border-radius: 8px;
+                padding: 5px;
+            }
+
+            p.round3 {
+                border: 2px solid green;
+                border-radius: 12px;
+                padding: 5px;
+            }
+
+
+        </style>
+
+    </head>
+    
+    <body>
+
+        <h1 id="page-title" style="text-align: center;">CSS Borders</h1>
+        
+        <p id="page-description" style="text-align: center;">
+            This is my first web page. I am learning now HTML and CSS.
+        </p>
+        
+
+        <hr>
+
+        <div id="main-content">                
+            <fieldset>
+                <legend><h2>The border-style Property</h2></legend>
+                
+                <p class="dotted">A dotted border.</p>
+                <p class="dashed">A dashed border.</p>
+                <p class="solid">A solid border.</p>
+                <p class="double">A double border.</p>
+                <p class="groove">A groove border.</p>
+                <p class="ridge">A ridge border.</p>
+                <p class="inset">An inset border.</p>
+                <p class="outset">An outset border.</p>
+                <p class="none">No border.</p>
+                <p class="hidden">A hidden border.</p>
+                <p class="mix">A mixed border.</p>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>The border-width Property</h2></legend>
+
+                <p class="one">Some text.</p>
+                <p class="two">Some text.</p>
+                <p class="three">Some text.</p>
+                <p class="four">Some text.</p>
+                <p class="five">Some text.</p>
+                <p class="six">Some text.</p>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>CSS Border Color</h2></legend>
+
+                <p class="red">A solid red border</p>
+                <p class="green">A solid green border</p>
+                <p class="dotted">A dotted blue border</p>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>The border-radius Property</h2></legend>
+
+                <p class="normal">Normal border</p>
+                <p class="round1">Round border</p>
+                <p class="round2">Rounder border</p>
+                <p class="round3">Roundest border</p>
+            </fieldset>
+        </div>
+
+
+
+        <!-- জাভাস্ক্রিপ্ট (JavaScript) জেকুয়েরি (jQuery) ইত্যাদি স্ক্রিপ্ট যুক্ত করার জন্য <script></script> ট্যাগ ব্যবহার করা হয়। -->
+        <!-- JavaScript Library -->
+        <script type="text/javascript" src="jquery.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="bootstrap.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="w3.js"></script> <!-- Example Only -->
+
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="myscript.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="custom.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="main.js"></script> <!-- Example Only -->
+
+    </body>
+</html>
+

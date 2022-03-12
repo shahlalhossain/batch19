@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>CSS TitleTitleTitleTitleTitleTitle</title>
+
+        <meta charset="UTF-8"> <!-- Character Set নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Browser Compatibility আনতে ব্যবহার করা হয়। -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Web Page কে Responsive করতে ব্যবহার করা হয়। -->
+        <meta name="description" content="Web Design Tutorials by SET2020"> <!-- Web Page এর Description দিতে ব্যবহার করা হয় -->
+        <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, jQuery"> <!-- Search Engine এর জন্য Key Words নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta name="author" content="Shahlal Hossain"> <!-- Page এর Creator এর পরিচয় নির্দেশ করতে ব্যবহার করা হয়। -->
+
+        <!-- এক্সটারনাল স্টাইলশিটকে লিঙ্ক করার জন্য <link> এলিমেন্ট ব্যবহার করা হয়। -->
+        <!-- CSS Library -->
+        <link type="text/css" rel="stylesheet" href="bootstrap.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="w3.css"> <!-- Example Only -->
+       
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="mystyle.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="custom.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="main.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="layout.css"> <!-- Example Only -->
+
+        <!-- Internal CSS Code লিখতে <style></style> Section ব্যবহার করা হয়। -->
+        <style type="text/css">
+            
+            body { 
+                background-color: gainsboro;
+            }
+
+            #main-content {
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 100px;
+            }
+
+            #rcorners1 {
+                border-radius: 25px;
+                background: #73AD21;
+                padding: 20px; 
+                width: 200px;
+                height: 150px;  
+            }
+
+            #rcorners2 {
+                border-radius: 25px;
+                border: 2px solid #73AD21;
+                padding: 20px; 
+                width: 200px;
+                height: 150px;  
+            }
+
+            #rcorners3 {
+                border-radius: 25px;
+                color: white;
+                background: url('../html/images/background1.jpg');
+                background-position: left top;
+                background-repeat: repeat;
+                padding: 20px; 
+                width: 200px;
+                height: 150px;  
+            }
+
+            #rcorners4 {
+  border-radius: 15px 50px 30px 5px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners5 {
+  border-radius: 15px 50px 30px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners6 {
+  border-radius: 15px 50px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
+
+#rcorners7 {
+  border-radius: 15px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
+
+#rcorners8 {
+  border-radius: 50px / 15px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners9 {
+  border-radius: 15px / 50px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners10 {
+  border-radius: 50%;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;
+} 
+
+        </style>
+
+    </head>
+    
+    <body>
+
+        <h1 id="page-title" style="text-align: center;">CSS TitleTitleTitleTitleTitleTitleTitleTitleTitle</h1>
+        
+        <p id="page-description" style="text-align: center;">
+            I am learning now HTML and CSS.
+        </p>
+        
+
+        <hr>
+
+        <div id="main-content">                
+            <fieldset>
+                <legend><h2>Border with Radius</h2></legend>
+
+                <p>Rounded corners for an element with a specified background color:</p>
+                <p id="rcorners1">Rounded corners!</p>
+                <br><br><br>
+
+                <p>Rounded corners for an element with a border:</p>
+                <p id="rcorners2">Rounded corners!</p>
+                <br><br><br>
+
+                <p>Rounded corners for an element with a background image:</p>
+                <p id="rcorners3">Rounded corners!</p>
+                <br><br><br>
+                
+                <p>Four values - border-radius: 15px 50px 30px 5px:</p>
+                <p id="rcorners4"></p>
+                <br><br><br>
+
+                <p>Three values - border-radius: 15px 50px 30px:</p>
+                <p id="rcorners5"></p>
+                <br><br><br>
+
+                <p>Two values - border-radius: 15px 50px:</p>
+                <p id="rcorners6"></p>
+                <br><br><br>
+
+                <p>One value - border-radius: 15px:</p>
+                <p id="rcorners7"></p>
+                <br><br><br>
+
+                <p>Elliptical border - border-radius: 50px / 15px:</p>
+                <p id="rcorners8"></p>
+                <br><br><br>
+
+                <p>Elliptical border - border-radius: 15px / 50px:</p>
+                <p id="rcorners9"></p>
+                <br><br><br>
+
+                <p>Ellipse border - border-radius: 50%:</p>
+                <p id="rcorners10"></p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>SectionTitle</h2></legend>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>SectionTitle</h2></legend>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>SectionTitle</h2></legend>
+
+
+            </fieldset>
+        </div>
+
+
+
+        <!-- জাভাস্ক্রিপ্ট (JavaScript) জেকুয়েরি (jQuery) ইত্যাদি স্ক্রিপ্ট যুক্ত করার জন্য <script></script> ট্যাগ ব্যবহার করা হয়। -->
+        <!-- JavaScript Library -->
+        <script type="text/javascript" src="jquery.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="bootstrap.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="w3.js"></script> <!-- Example Only -->
+
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="myscript.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="custom.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="main.js"></script> <!-- Example Only -->
+
+    </body>
+</html>
+
