@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>HTML Contact Us Page Example</title>
+
+        <meta charset="UTF-8"> <!-- Character Set নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Browser Compatibility আনতে ব্যবহার করা হয়। -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Web Page কে Responsive করতে ব্যবহার করা হয়। -->
+        <meta name="description" content="Web Design Tutorials by SET2020"> <!-- Web Page এর Description দিতে ব্যবহার করা হয় -->
+        <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, jQuery"> <!-- Search Engine এর জন্য Key Words নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta name="author" content="Shahlal Hossain"> <!-- Page এর Creator এর পরিচয় নির্দেশ করতে ব্যবহার করা হয়। -->
+
+        <!-- এক্সটারনাল স্টাইলশিটকে লিঙ্ক করার জন্য <link> এলিমেন্ট ব্যবহার করা হয়। -->
+        <!-- CSS Library -->
+        <link type="text/css" rel="stylesheet" href="bootstrap.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="w3.css"> <!-- Example Only -->
+       
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="mystyle.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="custom.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="main.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="layout.css"> <!-- Example Only -->
+
+        <!-- Internal CSS Code লিখতে <style></style> Section ব্যবহার করা হয়। -->
+        <style type="text/css">
+            
+            body { 
+                background-color: gainsboro;
+            }
+
+            #main-content {
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 100px;
+            }
+
+        </style>
+
+    </head>
+    
+    <body>
+
+        <h1 id="page-title" style="text-align: center;">HTML Contact Us Page Example</h1>
+        
+        <p id="page-description" style="text-align: center;">
+            This is my first web page. I am learning now HTML.
+
+            <br><br>
+            <a href="../11_linking.html">হোম</a> &nbsp;|&nbsp;
+
+            <a href="contact.html">যোগাযোগ</a> &nbsp;|&nbsp;
+            <a href="terms.html">নীতিমালা</a> &nbsp;|&nbsp;
+            <a href="forum.html">ফোরাম</a> &nbsp;|&nbsp;
+            <a href="https://www.prothomalo.com/bangladesh">বাংলাদেশ</a> &nbsp;|&nbsp;
+            <a href="https://www.prothomalo.com/world">আন্তর্জাতিক</a>
+        </p>
+        
+
+        <hr>
+
+        <div id="main-content">
+            
+            
+            
+            <div id="css-tutorial">
+                <h3>ফোরাম</h3>
+                <hr>
+                <p>পত্রিকার ডিযাইনে কলাম দেখা যায়, ছবিগুলো অ্যালবামে কলাম আকারে সাজানো থাকে, আপনার পোর্টফোলিও কলাম আকারে গুছিয়ে দেখাতে পারেন – কলাম ডিযাইন তৈরি ঘুরেফিরেই আপনার প্রয়োজন হবে। এজন্যই এর আগে আমরা দেখেছিলাম কিভাবে পিএইচপি লুপ ব্যবহার করে ওয়েবসাইটে কলামের ডিযাইন করা যায়। আমরা সেদিন বলেছিলাম, CSS3 দিয়েও কাজটা আরো সহজে করা যায়। এতোদিন পরে হলেও আমরা কথা রাখতে পেরেছি, আজ আমরা সেটাই দেখবো ইনশাল্লাহ। </p>
+                <p>সিএসএস৩ দিয়ে তৈরি কলাম আরো পরিচ্ছন্ন, আরো সহজ। এখানে স্তবকে স্তবকে সাজানো <div>-গুলোকে কোনো ক্লাস কিংবা সিলেক্টরের তোয়াক্কা না করে শ্রেফ সিএসএস দিয়ে ধরে ধরে কলাম আকারে সাজিয়ে ফেলা যাবে। এবং রেসপন্সিভ ডিযাইনেও একই কৌশল কাজে লাগিয়ে লেআউটকে বিভিন্ন ভিউপোর্টে ইচ্ছামতো বদলে নেয়া যাবে।</p>
+                <p>সিএসএস (CSS: Cascade StyleSheet) হলো ওয়েব ডিযাইনের একটি ভাষা, যা দিয়ে ওয়েবসাইটের HTML দিয়ে লেখা কাঠামোগুলোকে সাজানো হয়। ক্যাসক্যাড কথাটার মানে হলো ‘জলপ্রপাতের মতো নেমে আসা’, তবে ইলেকট্রনিক্সের পরিভাষায় এর অর্থটা এরকম: A series of components or networks, the output of each of which serves as the input for the next — বাংলা করলে দাঁড়ায়: ক্যাসক্যাড হলো এমন ধারাবাহিক কিছু, যার একটি দিয়ে অন্যটির সূত্রপাত হয়। সোজা বাংলায় সিএসএসের কোডগুলো ঝরণার মতোই ধাপে ধাপে সাজানো, যেখানে পরের কোডটা, আগের কোডের চেয়ে প্রাধান্য পায়।</p>
+                <p>
+                    সিএসএসের ধরণ: সিএসএস-এর আসলে কোনো প্রকারভেদ নেই, সব সিএসএস-ই একইরকম। কিন্তু কিভাবে সেটা ব্যবহার করা হচ্ছে, তার হিসাবে সিএসএস তিন রকম:
+                    <ol>
+                        <li>ইনলাইন সিএসএস বা লাইনের মধ্যবর্তী সিএসএস (Inline CSS)</li>
+                        <li>ইন্টারনাল সিএসএস বা অভ্যন্তরীণ সিএসএস (Internal CSS)</li>
+                        <li>এক্সটার্নাল সিএসএস বা বহিঃস্থ সিএসএস (External CSS)</li>
+                    </ol>
+                </p>
+                <p>ইনলাইন সিএসএস লেখা হয় HTML এলিমেন্ট বা ট্যাগগুলোর ভিতরে ভিতরে। এক্ষেত্রে HTML এলিমেন্টের মধ্যে লিখতে হয় style আর সিএসএস কোডগুলো লিখতে হয় সমান চিহ্নের (=) পরে ডাবল কোটের (“”) ভিতরে। এভাবে লেখার কারণটা সিএসএসের মধ্যে নয়, বরং HTML-এর মধ্যে, কারণ HTML-এ কোনো প্রোপার্টি লেখার পদ্ধতি হলো এরকম, সমান চিহ্নের পরে ডাবল কোটের ভিতরে লিখতে হয়।</p>
+                <p>ইন্টারনাল সিএসএস, HTML এলিমেন্টের ভিতর লেখা হয় না, তবে HTML ফাইলের ভিতরে লেখা হয় বলেই একে অভ্যন্তরীণ সিএসএস বলে। এধরণের সিএসএস লেখা হয় HTML-এর "<"style> ট্যাগের ভিতরে। ইনলাইন সিএসএস-এ যেহেতু আমি HTML এলিমেন্ট বা ট্যাগের ভিতরে ভিতরেই প্রয়োজনীয় সিএসএস কোড বসাতে পারছি, সেহেতু কোন সিএসএস কোনো ট্যাগের জন্য বসানো হচ্ছে, তা সহজেই বোঝা যাচ্ছে। কিন্তু ইন্টারনাল সিএসএস-এ সমস্যা হলো সিএসএস-কে HTML থেকে আলাদা করে লেখা হচ্ছে, তাই তখন রহিম, করিম ইত্যাদি নাম ধরে ডাকতে হয় HTML এলিমেন্টগুলোকে। অর্থাৎ HTML এলিমেন্টগুলো কিংবা তাদেরকে দেয়া id কিংবা class-এর নাম ধরে ডাকতে হয় তখন।</p>
+                <p>এক্সটার্নাল সিএসএস-এর নাম থেকেই বুঝা যাচ্ছে, এজাতীয় সিএসএস-কে মূল HTML ফাইল থেকেই বিচ্ছিন্ন করে ফেলা হয়। আগেই বলেছি, সিএসএস-এর কোনো রকমভেদ নেই, সব সিএসএসই একই জিনিস, কিন্তু ব্যবহার ভিন্ন বলেই নাম ভিন্ন হয়েছে। তাই সাধারণ সিএসএস কোডই একটা ফাইলে লিখে, তাকে ডট সিএসএস (.css) ফাইল হিসেবে সংরক্ষণ করলেই তাকে এক্সটার্নাল সিএসএস বলা হয়।</p>
+                <p>ধরা যাক, কোনো একটা ওয়েবসাইটের মূল ফাইলটা যদি হয় index.html, তাহলে সেই HTML এলিমেন্টগুলোর যাবতীয় স্টাইল সাজানো থাকলো style.css ফাইলে। কিন্তু ইনলাইন সিএসএস কিংবা ইন্টারনাল সিএসএস করলে তো সিএসএস কোডগুলো থাকে HTML ফাইলের ভিতরেই, অথচ এক্ষেত্রে আমরা সিএসএস-এর আলাদা একটা ফাইল করেছি। এখন এই দুটোর মধ্যে সংযোগ স্থাপন করবো কিভাবে?</p>
+
+                <br><br><br>
+            </div>
+            
+            <p id="page-description" style="text-align: center;">
+    
+                <br>
+                <a href="../11_linking.html">হোম</a> &nbsp;|&nbsp;
+
+                <a href="contact.html">যোগাযোগ</a> &nbsp;|&nbsp;
+                <a href="terms.html">নীতিমালা</a> &nbsp;|&nbsp;
+                <a href="forum.html">ফোরাম</a> &nbsp;|&nbsp;
+                <a href="https://www.prothomalo.com/bangladesh" target="_blank">বাংলাদেশ</a> &nbsp;|&nbsp;
+                <a href="https://www.prothomalo.com/world">আন্তর্জাতিক</a>
+            </p>
+
+        </div>
+
+
+
+
+
+
+        <!-- জাভাস্ক্রিপ্ট (JavaScript) জেকুয়েরি (jQuery) ইত্যাদি স্ক্রিপ্ট যুক্ত করার জন্য <script></script> ট্যাগ ব্যবহার করা হয়। -->
+        <!-- JavaScript Library -->
+        <script type="text/javascript" src="jquery.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="bootstrap.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="w3.js"></script> <!-- Example Only -->
+
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="myscript.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="custom.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="main.js"></script> <!-- Example Only -->
+
+
+    </body>
+</html>
+
