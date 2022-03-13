@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>CSS Text Shadow</title>
+
+        <meta charset="UTF-8"> <!-- Character Set নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Browser Compatibility আনতে ব্যবহার করা হয়। -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Web Page কে Responsive করতে ব্যবহার করা হয়। -->
+        <meta name="description" content="Web Design Tutorials by SET2020"> <!-- Web Page এর Description দিতে ব্যবহার করা হয় -->
+        <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, jQuery"> <!-- Search Engine এর জন্য Key Words নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta name="author" content="Shahlal Hossain"> <!-- Page এর Creator এর পরিচয় নির্দেশ করতে ব্যবহার করা হয়। -->
+
+        <!-- এক্সটারনাল স্টাইলশিটকে লিঙ্ক করার জন্য <link> এলিমেন্ট ব্যবহার করা হয়। -->
+        <!-- CSS Library -->
+        <link type="text/css" rel="stylesheet" href="bootstrap.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="w3.css"> <!-- Example Only -->
+       
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="mystyle.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="custom.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="main.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="layout.css"> <!-- Example Only -->
+
+        <!-- Internal CSS Code লিখতে <style></style> Section ব্যবহার করা হয়। -->
+        <style type="text/css">
+            
+            #main-content {
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 100px;
+            }
+
+
+
+            div.card {
+                width: 250px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+                text-align: center;
+                margin-left: 50px;
+            }
+
+            div.header {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px;
+                font-size: 40px;
+            }
+
+            div.container {
+                padding: 10px;
+            }
+
+
+            div.polaroid {
+                width: 400px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+                text-align: left;
+                margin-left: 50px;
+            }
+
+            div.container {
+                padding: 10px;
+            }
+
+
+
+
+        </style>
+
+    </head>
+    
+    <body>
+
+        <h1 id="page-title" style="text-align: center;">CSS Text Shadow</h1>
+        
+        <p id="page-description" style="text-align: center;">
+            I am learning now HTML and CSS.
+        </p>
+        
+
+        <hr>
+
+        <div id="main-content">                
+            <fieldset>
+                <legend><h2>CSS Box Shadow -- Style 1</h2></legend>
+                <div class="card">
+                    <div class="header">
+                        <h1>1</h1>
+                    </div>
+
+                    <div class="container">
+                        <p>January 1, 2023</p>
+                    </div>
+                </div>
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>CSS Box Shadow -- Style 2 (Image)</h2></legend>
+                <div class="polaroid">
+                    <img src="../1html/images/background3.jpg" alt="Norway" style="width:100%">
+                    <div class="container">
+                      <p>
+                          <b>Trade:</b> Software Development <br>
+                          <i>Web Application Design and Development</i>
+                      </p>
+                    </div>
+                </div>
+                <br><br>
+            </fieldset>
+        </div>
+
+
+        <!-- জাভাস্ক্রিপ্ট (JavaScript) জেকুয়েরি (jQuery) ইত্যাদি স্ক্রিপ্ট যুক্ত করার জন্য <script></script> ট্যাগ ব্যবহার করা হয়। -->
+        <!-- JavaScript Library -->
+        <script type="text/javascript" src="jquery.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="bootstrap.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="w3.js"></script> <!-- Example Only -->
+
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="myscript.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="custom.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="main.js"></script> <!-- Example Only -->
+
+    </body>
+</html>
+
