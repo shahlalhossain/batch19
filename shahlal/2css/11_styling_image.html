@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>CSS Image Styling</title>
+
+        <meta charset="UTF-8"> <!-- Character Set নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Browser Compatibility আনতে ব্যবহার করা হয়। -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Web Page কে Responsive করতে ব্যবহার করা হয়। -->
+        <meta name="description" content="Web Design Tutorials by SET2020"> <!-- Web Page এর Description দিতে ব্যবহার করা হয় -->
+        <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, jQuery"> <!-- Search Engine এর জন্য Key Words নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta name="author" content="Shahlal Hossain"> <!-- Page এর Creator এর পরিচয় নির্দেশ করতে ব্যবহার করা হয়। -->
+
+        <!-- এক্সটারনাল স্টাইলশিটকে লিঙ্ক করার জন্য <link> এলিমেন্ট ব্যবহার করা হয়। -->
+        <!-- CSS Library -->
+        <link type="text/css" rel="stylesheet" href="bootstrap.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="w3.css"> <!-- Example Only -->
+       
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="mystyle.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="custom.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="main.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="layout.css"> <!-- Example Only -->
+
+        <!-- Internal CSS Code লিখতে <style></style> Section ব্যবহার করা হয়। -->
+        <style type="text/css">
+
+            #main-content {
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 100px;
+            }
+
+            #example1 {
+                border-radius: 10px;
+                float: left;
+            }
+
+            #example2 {
+                margin-left: 400px;
+                margin-right: 400px;
+                border-radius: 50%;
+            }
+
+            #example3 {
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 5px;
+                float: right;
+            }
+
+            #example4{
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 5px;
+            }
+
+            #example4:hover {
+                box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+            }
+
+            #example5 {
+                opacity: 0.1;
+            }
+
+            #example6 {
+                opacity: 0.3;
+            }
+
+            #example7 {
+                opacity: 0.5;
+            }
+            
+            #example8 {
+                opacity: 0.7;
+            }
+
+            #example9 {
+                opacity: 1.0;
+            }
+
+
+            .container {
+                position: relative;
+            }
+
+            .imagetext { 
+                opacity: 0.3;
+            }
+
+            .topleft {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                font-size: 20px;
+            }
+
+            .topright {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 20px;
+            }
+
+            .bottomleft {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                font-size: 20px;
+            }
+
+            .bottomright {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                font-size: 20px;
+            }
+
+            .imagetextcenter {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+            }
+
+
+            .imagecontainer {
+                position: relative;
+                width: 20%;
+            }
+
+            .image1 {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .overlay1 {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #008CBA;
+            }
+
+            .imagecontainer:hover .overlay1 {
+                opacity: 1;
+            }
+
+            .text1 {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+
+            .image2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.imagecontainer:hover .overlay2 {
+  bottom: 0;
+  height: 100%;
+}
+
+.text2 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.image3 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay3 {
+  height: 100%;
+}
+
+.text3 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50);
+}
+        </style>
+
+    </head>
+    
+    <body>
+
+        <h1 id="page-title" style="text-align: center;">CSS Image Styling</h1>
+        
+        <p id="page-description" style="text-align: center;">
+            I am learning now HTML and CSS.
+        </p>
+        
+        <hr>
+
+        <fieldset>
+            <legend><h3>CSS Image Hover Overlay</h3></legend>
+            <h4>Fade in Overlay</h4>
+
+            <div class="imagecontainer">
+                <img src="../1html/images/avatar1.png" alt="Avatar" class="image1">
+                <div class="overlay1">
+                    <div class="text1">Shahlal Hossain</div>
+                </div>
+            </div>
+
+            <div class="imagecontainer">
+                <img src="../1html/images/avatar1.png" alt="Avatar" class="image2">
+                <div class="overlay2">
+                    <div class="text2">Shahlal Hossain</div>
+                </div>
+            </div>
+
+            <div class="imagecontainer">
+                <img src="../1html/images/avatar1.png" alt="Avatar" class="image3">
+                <div class="overlay3">
+                    <div class="text3">Shahlal Hossain</div>
+                </div>
+            </div>
+
+            <div class="imagecontainer">
+                <img src="../1html/images/avatar1.png" alt="Avatar" class="image4">
+                <div class="overla4">
+                    <div class="text4">Shahlal Hossain</div>
+                </div>
+            </div>
+
+            <div class="imagecontainer">
+                <img src="../1html/images/avatar1.png" alt="Avatar" class="image5">
+                <div class="overlay5">
+                    <div class="text5">Shahlal Hossain</div>
+                </div>
+            </div>
+        </fieldset>
+    
+
+        <fieldset>
+            <legend><h3>CSS Image Styling</h3></legend>
+            <img id="example1" src="../1html/images/background4.jpg" alt="Nature" width="300" height="300">
+            <img id="example2" src="../1html/images/background4.jpg" alt="Nature" width="300" height="300">
+            <img id="example3" src="../1html/images/background4.jpg" alt="Nature" width="300" height="300">
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>CSS Image as Link</h3></legend>
+            <a target="_blank" href="../1html/images/background4.jpg">
+                <img id="example4" src="../1html/images/background4.jpg" alt="Nature" width="300" height="300">
+            </a>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>CSS Transparent Image</h3></legend>
+            <img id="example5" src="../1html/images/background4.jpg" alt="Nature" width="300" height="300">
+            <img id="example6" src="../1html/images/background4.jpg" alt="Nature" width="300" height="300">
+            <img id="example7" src="../1html/images/background4.jpg" alt="Nature" width="300" height="300">
+            <img id="example8" src="../1html/images/background4.jpg" alt="Nature" width="300" height="300">
+            <img id="example9" src="../1html/images/background4.jpg" alt="Nature" width="300" height="300">
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>CSS Image Text -- Top-Left</h3></legend>
+            <div class="container">
+                <img class="imagetext" src="../1html/images/background3.jpg" alt="Nature" width=100% height="600">
+                <div class="topleft">CSS Image Text -- Top-Left</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>CSS Image Text -- Top-Right</h3></legend>
+            <div class="container">
+                <img class="imagetext" src="../1html/images/background3.jpg" alt="Nature" width=100% height="600">
+                <div class="topright">CSS Image Text -- Top-Right</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>CSS Image Text -- Bottom-Left</h3></legend>
+            <div class="container">
+                <img class="imagetext" src="../1html/images/background3.jpg" alt="Nature" width=100% height="600">
+                <div class="bottomleft">CSS Image Text -- Bottom-Left</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>CSS Image Text -- Bottom-Right</h3></legend>
+            <div class="container">
+                <img class="imagetext" src="../1html/images/background3.jpg" alt="Nature" width=100% height="600">
+                <div class="bottomright">CSS Image Text -- Bottom-Right</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>CSS Image Text -- Position Center</h3></legend>
+            <div class="container">
+                <img class="imagetext" src="../1html/images/background3.jpg" alt="Nature" width=100% height="600">
+                <div class="imagetextcenter">CSS Image Text -- Position Center</div>
+            </div>
+        </fieldset>
+
+
+        <!-- জাভাস্ক্রিপ্ট (JavaScript) জেকুয়েরি (jQuery) ইত্যাদি স্ক্রিপ্ট যুক্ত করার জন্য <script></script> ট্যাগ ব্যবহার করা হয়। -->
+        <!-- JavaScript Library -->
+        <script type="text/javascript" src="jquery.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="bootstrap.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="w3.js"></script> <!-- Example Only -->
+
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="myscript.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="custom.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="main.js"></script> <!-- Example Only -->
+
+    </body>
+</html>
+
