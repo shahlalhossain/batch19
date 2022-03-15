@@ -40,6 +40,65 @@
     clear:both;
     padding: 10px;
     }
+    p.dotted {border-style:dotted;}
+    p.dashed {border-style:dashed;}
+    p.solid {border-style:solid;}
+    p.double {border-style:double;}
+    p.groove {border-style:groove;}
+    p.ridge {border-style:ridge;}
+    p.inset {border-style:inset;}
+    p.outset {border-style:outset;}
+    p.none {border-style:none;}
+    p.hidden {border-style:hidden;}
+    p.mix {border-style:dotted dashed solid double;}
+    p.one {border-style:solid; border-width:5px;}
+    p.two {border-style:solid; border-width:medium;}
+    p.three {border-style:dotted; border-width:2px;}
+    p.four {border-style:dotted; border-width:thick;}
+    p.five {border-style:double; border-width:15px;}
+    p.six {border-style:double; border-width:thick;}
+    p.seven {border-style:solid; border-width:2px 10px 4px 20px;}
+    p.one {border-style: solid; border-color: red;}
+    p.two {border-style: solid; border-color: green;}
+    p.three {border-style: solid; border-color: red green blue yellow;}
+    
+    
+ 
+ p {outline-color:red; outline-width: 4px;}
+ p.dotted {outline-style: dotted;}
+ p.dashed {outline-style: dashed;}
+ p.solid {outline-style: solid;}
+ p.double {outline-style: double;}
+ p.groove {outline-style: groove;}
+ p.ridge {outline-style: ridge;}
+ p.inset {outline-style: inset;}
+ p.outset {outline-style: outset;}
+ /* * {
+ box-sizing: border-box;
+ } */
+ dl > div {
+ padding: 24px 0 0 0;
+ }
+ dt {
+ background: #B8C1C8;
+ border-bottom: 1px solid #989EA4;
+ border-top: 1px solid #717D85;
+ color: #FFF;
+ margin: 0;
+ padding: 2px 0 0 12px;
+ position: sticky;
+ position: sticky;
+ top: -1px;
+ }
+ dd {
+ font: bold 20px/45px Helvetica, Arial, sans-serif;
+ margin: 0;
+ padding: 0 0 0 12px;
+ white-space: nowrap;
+ }
+ dd + dd {
+ border-top: 1px solid #CCC
+ }
     </style>
    
 </head>
@@ -201,9 +260,96 @@
             Date of birth: <input type="date">
         </fieldset>           
         <input type="submit">
-
-
+        <fieldset>
+            <legend>Border Property</legend>
+            <h2>The border-style Property</h2>
+            <p>This property specifies what kind of border to display:</p>
+            <p class="dotted">A dotted border.</p>
+            <p class="dashed">A dashed border.</p>
+            <p class="solid">A solid border.</p>
+            <p class="double">A double border.</p>
+            <p class="groove">A groove border.</p>
+            <p class="ridge">A ridge border.</p>
+            <p class="inset">An inset border.</p>
+            <p class="outset">An outset border.</p>
+            <p class="none">No border.</p>
+            <p class="hidden">A hidden border.</p>
+            <p class="mix">A mixed border.</p>
+        </fieldset>
     </form>
+    <fieldset>
+        <legend>border-width</legend>
+        <h2>The border-width Property</h2>
+        <p>This property specifies the width of the four borders:</p>
+        <p class="one">Some text.</p>
+        <p class="two">Some text.</p>
+        <p class="three">Some text.</p>
+        <p class="four">Some text.</p>
+        <p class="five">Some text.</p>
+        <p class="six">Some text.</p>
+        <p class="seven">Some text.</p>
+    </fieldset>
+    <fieldset>
+        <legend>border-color</legend>
+        <h2>The border-color Property</h2>
+        <p>This property specifies the color of the four borders:</p>
+        <p class="one">A solid red border</p>
+        <p class="two">A solid green border</p>
+        <p class="three">A solid multicolor border</p>
+    </fieldset>
+    
+   
+    <fieldset>
+        <legend>outline-style
+        </legend>
+        <h2>The outline-style Property</h2>
+        <p class="dotted">A dotted outline</p>
+        <p class="dashed">A dashed outline</p>
+        <p class="solid">A solid outline</p>
+        <p class="double">A double outline</p>
+        <p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+        <p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+        <p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+        <p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+
+    </fieldset>
+    <fieldset>
+        <legend>position: sticky:</legend>
+        <h2>Alphabetical list of countries</h2>
+        <dl>
+        <div>
+        <dt>A</dt>
+        <dd>Afghanistan</dd>
+        <dd>Argentina</dd>
+        <dd>Australia</dd>
+        <dd>Austria</dd>
+        <dd>Armenia</dd>
+        </div>
+        <div>
+        <dt>B</dt>
+        <dd>Bangladesh</dd>
+        <dd>Bahrain</dd>
+        <dd>Brazil</dd>
+        <dd>Bhutan</dd>
+        <dd>Belgium</dd>
+        </div>
+        <div>
+        <dt>C</dt>
+        <dd>Canada</dd>
+        <dd>China</dd>
+        <dd>Cuba</dd>
+        </div>
+        </dl>
+    </fieldset>
+    <fieldset>
+        <legend></legend>
+    </fieldset>
+    <fieldset>
+        <legend></legend>
+    </fieldset>
+    <fieldset>
+        <legend></legend>
+    </fieldset>
  <script type="text/javascript" src="jquery.js"></script>
  <script type="text/javascript" src="custom.js"></script>
 </body>

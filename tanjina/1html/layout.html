@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>html layout</title>
+
+        <meta charset="UTF-8"> <!-- Character Set নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Browser Compatibility আনতে ব্যবহার করা হয়। -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Web Page কে Responsive করতে ব্যবহার করা হয়। -->
+        <meta name="description" content="Web Design Tutorials by SET2020"> <!-- Web Page এর Description দিতে ব্যবহার করা হয় -->
+        <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, jQuery"> <!-- Search Engine এর জন্য Key Words নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta name="author" content="Tanjina Akter"> <!-- Page এর Creator এর পরিচয় নির্দেশ করতে ব্যবহার করা হয়। -->
+
+        <!-- এক্সটারনাল স্টাইলশিটকে লিঙ্ক করার জন্য <link> এলিমেন্ট ব্যবহার করা হয়। -->
+        <!-- CSS Library -->
+        <link type="text/css" rel="stylesheet" href="bootstrap.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="w3.css"> <!-- Example Only -->
+       
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="mystyle.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="custom.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="main.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="layout.css"> <!-- Example Only -->
+
+        <!-- Internal CSS Code লিখতে <style></style> Section ব্যবহার করা হয়। -->
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+            body { 
+                /* background-color: gainsboro; */
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #main-content {
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 100px;
+            }
+            /* Style the header */
+            header {
+            /* background-color: #666; */
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: black;
+            background:  url('images/background4.jpg');
+            background-repeat: no-repeat;
+            /* background-position: left top; */
+            /* background-attachment: fixed; */
+            background-size: cover;
+            }
+                    
+            /* Create two columns/boxes that floats next to each other */
+            nav {
+            float: left;
+            width: 30%;
+            height: 300px; /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+            }
+
+            /* Style the list inside the menu */
+            nav ul {
+            list-style-type: none;
+            padding: 0;
+            }
+
+            article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* only for demonstration, should be removed */
+            }
+
+            /* Clear floats after the columns */
+            section::after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            /* Style the footer */
+            footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            }
+
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+            }
+            .header{
+            width : 100%;
+            background-color:#bc8;
+            height: 100px;
+            }
+            .left_menu{
+            width : 20%;
+            float:left;
+            background-color:#9c9;
+            height: 250px;
+            }
+            .right_menu{
+            width : 20%;
+            float:right;
+            background-color:#9c9;
+            height: 250px;
+            }
+            .content{
+            float: left;
+            width: 60%;
+            background-color:#eee;
+            height: 250px;
+            }
+            .footer{
+            width:100%;
+            background-color:#000;
+            height: 50px;
+            color:#fff;
+            clear:both
+            }
+
+        </style>
+
+    </head>
+    
+    <body>
+
+        <h1 id="page-title" style="text-align: center;">PageTitle</h1>
+        
+        <p id="page-description" style="text-align: center;">
+            Description
+        </p>
+        
+
+        <hr>
+
+        <div id="main-content">
+           
+            <h2>CSS Layout Float</h2>
+            <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+            <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+            
+            <header>
+              <h2>Cities</h2>
+            </header>
+            
+            <section>
+              <nav>
+                <ul>
+                  <li><a href="#">London</a></li>
+                  <li><a href="#">Paris</a></li>
+                  <li><a href="#">Tokyo</a></li>
+                </ul>
+              </nav>
+              
+              <article>
+                <h1>London</h1>
+                <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+              </article>
+            </section>
+            
+            <footer>
+              <p>Footer</p>
+            </footer>
+                    <div class="header">Header</div>
+                    <div class="left_menu">Left Menu</div>
+                    <div class="content">Main Content</div>
+                    <div class="right_menu">Right Menu</div>
+                    <div class="footer">Footer</div>
+            
+        </div>
+        
+        <!-- জাভাস্ক্রিপ্ট (JavaScript) জেকুয়েরি (jQuery) ইত্যাদি স্ক্রিপ্ট যুক্ত করার জন্য <script></script> ট্যাগ ব্যবহার করা হয়। -->
+        <!-- JavaScript Library -->
+        <script type="text/javascript" src="jquery.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="bootstrap.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="w3.js"></script> <!-- Example Only -->
+
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="myscript.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="custom.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="main.js"></script> <!-- Example Only -->
+
+    </body>
+</html>
+

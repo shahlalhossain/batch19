@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>CSS Position Property</title>
+
+        <meta charset="UTF-8"> <!-- Character Set নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Browser Compatibility আনতে ব্যবহার করা হয়। -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Web Page কে Responsive করতে ব্যবহার করা হয়। -->
+        <meta name="description" content="Web Design Tutorials by SET2020"> <!-- Web Page এর Description দিতে ব্যবহার করা হয় -->
+        <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, jQuery"> <!-- Search Engine এর জন্য Key Words নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta name="author" content="Tanjina Akter"> <!-- Page এর Creator এর পরিচয় নির্দেশ করতে ব্যবহার করা হয়। -->
+
+        <!-- এক্সটারনাল স্টাইলশিটকে লিঙ্ক করার জন্য <link> এলিমেন্ট ব্যবহার করা হয়। -->
+        <!-- CSS Library -->
+        <link type="text/css" rel="stylesheet" href="bootstrap.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="w3.css"> <!-- Example Only -->
+       
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="mystyle.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="custom.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="main.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="layout.css"> <!-- Example Only -->
+
+        <!-- Internal CSS Code লিখতে <style></style> Section ব্যবহার করা হয়। -->
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+            body { 
+                /* background-color: gainsboro; */
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #main-content {
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 100px;
+            }
+            div.static {
+                position: static;
+                border: 3px solid #73AD21;
+                }
+            .relative{
+                padding-bottom: 50px;
+            }    
+                .box {
+                display: inline-block;
+                background: green;
+                width: 100px;
+                height: 100px;
+                color: white;
+                padding: 5px;
+                }
+                #two {
+                position: relative;
+                top: 30px;
+                left: 40px;
+                } 
+                .box1 {
+                display: inline-block;
+                background: orange;
+                width: 100px;
+                height: 100px;
+                color: white;
+                padding: 5px;
+                }
+                .box2 {
+                display: inline-block;
+                background: purple;
+                width: 100px;
+                height: 100px;
+                color: white;
+                padding: 5px;
+                }
+                .box3 {
+                display: inline-block;
+                background: magenta;
+                width: 100px;
+                height: 100px;
+                color: white;
+                padding: 5px;
+                }
+                .absolute{
+                    position: relative;
+                    padding-bottom: 50px;
+
+                }
+                #absolute {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                } 
+                .boxOne {
+                background: orange;
+                width: 100px;
+                height: 100px;
+                color: white;
+                margin: 10px;
+                }
+                .fixed{
+                    position: relative;
+                    padding-bottom: 50px;
+
+                }
+                #fixed {
+                position: fixed;
+                top: 50px;
+                right: 50px;
+                }
+                dl > div {
+                padding: 24px 0 0 0;
+                }
+                dt {
+                background: #B8C1C8;
+                border-bottom: 1px solid #989EA4;
+                border-top: 1px solid #717D85;
+                color: #FFF;
+                margin: 0;
+                padding: 2px 0 0 12px;
+                position: sticky;
+                position: sticky;
+                top: -1px;
+                }
+                dd {
+                font: bold 20px/45px Helvetica, Arial, sans-serif;
+                margin: 0;
+                padding: 0 0 0 12px;
+                white-space: nowrap;
+                }
+                dd + dd {
+                border-top: 1px solid #CCC
+                }
+                div.parent {
+                position: relative;
+                height: 150px;
+                width:500px;
+                border: 3px solid #8AC007;
+                }
+                div.absoluteBottom {
+                position: absolute;
+                width: 50%;
+                bottom: 10px;
+                border: 3px solid #8AC007;
+                }
+                div.relativeBottom {
+                position: relative;
+                width: 50%;
+                bottom: 5px;
+                border: 3px solid #8AC007;
+                }
+                div.fixedBottom {
+                position: fixed;
+                width: 30%;
+                bottom: 10px;
+                border: 3px solid #8AC007;
+                }
+                div.stickyBottom {
+                position: sticky;
+                width: 50%;
+                bottom: 10px;
+                border: 3px solid #8AC007;
+                }
+                div.a {
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 3px solid red;
+                }
+                div.b {
+                position: absolute;
+                left: auto;
+                width: 100px;
+                height: 120px;
+                border: 3px solid blue;
+                }
+                div.c {
+                position: absolute;
+                left: 150px;
+                width: 200px;
+                height: 120px;
+                border: 3px solid green;
+                } 
+                div.aRight {
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 3px solid red;
+                }
+                div.bRight {
+                position: absolute;
+                right: 0;
+                width: 100px;
+                height: 120px;
+                border: 3px solid blue;
+                }
+                div.cRight {
+                position: absolute;
+                right: 150px;
+                width: 200px;
+                height: 120px;
+                border: 3px solid green;
+                }
+                div.aTop {
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 3px solid red;
+                }
+                div.bTop {
+                position: absolute;
+                top: 0;
+                border: 3px solid blue;
+                }
+                div.cTop {
+                position: absolute;
+                top: 50px;
+                border: 3px solid green;
+                }
+
+        </style>
+
+    </head>
+    
+    <body>
+
+        <h1 id="page-title" style="text-align: center;">CSS Position Property</h1>
+        
+        <p id="page-description" style="text-align: center;">
+            Description
+        </p>
+        
+
+        <hr>
+
+        <div id="main-content">
+           <fieldset>
+               <legend>Position static</legend>
+               <h2>position: static;</h2>
+                <p>An element with position: static; is not positioned in any special way; it is
+                always positioned according to the normal flow of the page:</p>
+                <div class="static">
+                This div element has position: static;
+                </div>
+           </fieldset>
+           <fieldset class="relative">
+               <legend>CSS Position Relative</legend>
+               <div class="box" id="one">One</div>
+                    <div class="box" id="two">Two</div>
+                    <div class="box" id="three">Three</div>
+           </fieldset>
+           <fieldset class="absolute">
+               <legend>CSS Position absolute</legend>
+               <div class="box1" id="one">One</div>
+                <div class="box2" id="absolute">Two</div>
+                <div class="box3" id="three">Three</div>
+           </fieldset>
+           <fieldset class="fixed">
+               <legend>CSS Position fixed</legend>
+               <div class="boxOne" id="one">One</div>
+                <div class="box" id="two">Two</div>
+                <div class="box" id="fixed">Three</div>
+                <div class="box" id="four">Four</div>
+                <div class="box" id="five">Five</div>
+                <div class="box" id="six">Six</div>
+           </fieldset>
+           <fieldset>
+               <legend>CSS Position Sticky</legend>
+               <h2>Alphabetical list of countries</h2>
+                <dl>
+                <div>
+                <dt>A</dt>
+                <dd>Afghanistan</dd>
+                <dd>Argentina</dd>
+                <dd>Australia</dd>
+                <dd>Austria</dd>
+                <dd>Armenia</dd>
+                </div>
+                <div>
+                <dt>B</dt>
+                <dd>Bangladesh</dd>
+                <dd>Bahrain</dd>
+                <dd>Brazil</dd>
+                <dd>Bhutan</dd>
+                <dd>Belgium</dd>
+                </div>
+                <div>
+                <dt>C</dt>
+                <dd>Canada</dd>
+                <dd>China</dd>
+                <dd>Cuba</dd>
+                </div>
+                </dl>
+
+           </fieldset>
+           <fieldset>
+               <legend>CSS bottom Property</legend>
+               <h1>The bottom Property</h1>
+                <div class="parent">This div element has position: relative;
+                <div class="absoluteBottom"><strong>position: absolute and bottom 10px</strong><br>
+                This div's bottom edge is placed 10 pixels above the bottom edge of the containing
+                element.
+                </div>
+                </div>
+                <br>
+                <div class="parent">This div element has position: relative;
+                <div class="relativeBottom"><strong>position: relative and bottom 5px</strong><br>
+                This div's bottom edge is placed 5 pixels above its normal position.
+                </div>
+                </div>
+                <br>
+                <div class="fixedBottom"><strong>position: fixed and bottom 10px</strong><br>
+                This div's bottom edge is placed 10 pixels from the bottom of the viewport.
+                </div>
+                <div class="parent">This div element has position: relative;
+                <div class="stickyBottom"><strong>position: sticky and bottom 10px</strong><br>
+                This div is sticky.
+                </div>
+                </div>
+           </fieldset>
+           <fieldset>
+               <legend>CSS left Property</legend>
+               <h1>The left Property</h1>
+                <div class="a">This div element has position: relative;
+                <div class="b">This div element has position: absolute and left: auto.</div>
+                <div class="c">This div element has position: absolute and is placed 150 pixels to the right
+                of the LEFT edge of the containing positioned element.</div>
+                </div>
+
+           </fieldset>
+           <fieldset>
+               <legend>CSS right Property</legend>
+               <h1>The right Property</h1>
+                <div class="aRight">This div element has position: relative;
+                <div class="bRight">This div element has position: absolute and right: 0.</div>
+                <div class="cRight">This div element has position: absolute and is placed 150 pixels to the left
+                of the right edge of the containing positioned element.</div>
+                </div>
+
+           </fieldset>
+           <fieldset>
+               <legend>CSS top Property</legend>
+               <h1>The top Property</h1>
+                <p>The following red div element has position: relative;</p>
+                <div class="aTop">
+                <div class="bTop">This div element has position: absolute, and top: 0.</div>
+                <div class="cTop">This div element has position: absolute, and is placed 50 pixels down from
+                the top edge of the containing positioned element.</div>
+                </div>
+           </fieldset>
+        </div>
+        
+        <!-- জাভাস্ক্রিপ্ট (JavaScript) জেকুয়েরি (jQuery) ইত্যাদি স্ক্রিপ্ট যুক্ত করার জন্য <script></script> ট্যাগ ব্যবহার করা হয়। -->
+        <!-- JavaScript Library -->
+        <script type="text/javascript" src="jquery.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="bootstrap.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="w3.js"></script> <!-- Example Only -->
+
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="myscript.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="custom.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="main.js"></script> <!-- Example Only -->
+
+    </body>
+</html>
+

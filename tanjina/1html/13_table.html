@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>HTML Table Example</title>
+
+        <meta charset="UTF-8"> <!-- Character Set নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Browser Compatibility আনতে ব্যবহার করা হয়। -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Web Page কে Responsive করতে ব্যবহার করা হয়। -->
+        <meta name="description" content="Web Design Tutorials by SET2020"> <!-- Web Page এর Description দিতে ব্যবহার করা হয় -->
+        <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, jQuery"> <!-- Search Engine এর জন্য Key Words নির্দেশ করতে ব্যবহার করা হয়। -->
+        <meta name="author" content="Shahlal Hossain"> <!-- Page এর Creator এর পরিচয় নির্দেশ করতে ব্যবহার করা হয়। -->
+
+        <!-- এক্সটারনাল স্টাইলশিটকে লিঙ্ক করার জন্য <link> এলিমেন্ট ব্যবহার করা হয়। -->
+        <!-- CSS Library -->
+        <link type="text/css" rel="stylesheet" href="bootstrap.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="w3.css"> <!-- Example Only -->
+       
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="mystyle.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="custom.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="main.css"> <!-- Example Only -->
+        <link type="text/css" rel="stylesheet" href="layout.css"> <!-- Example Only -->
+
+        <!-- Internal CSS Code লিখতে <style></style> Section ব্যবহার করা হয়। -->
+        <style type="text/css">
+            
+            body { 
+                background-color: gainsboro;
+            }
+
+            #main-content {
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 100px;
+            }
+
+            table {
+                text-align: left;
+                position: relative;
+                border-collapse: collapse; 
+                background-color: #f6f6f6;
+                border: 1px solid green;
+                margin-top: 30px;
+            }
+            
+            td, th {
+                border: 1px solid #999;
+                padding: 20px;
+            }
+
+            th {
+                background: brown;
+                color: white;
+                border: 1px solid black;
+                padding: 10px;
+            }
+
+            tbody > tr:hover {
+                background-color: #a4f5a1;
+            }
+            table.table th{
+                background: #041562;
+                padding: 15px;
+                margin-top: 20px;
+            }
+            table.table tbody tr:nth-child(even){background-color: #ddd;}
+            table.table tbody > tr:hover {
+                background-color: #FFB2A6;
+            }
+        </style>
+
+    </head>
+    
+    <body>
+
+        <h1 id="page-title" style="text-align: center;">HTML Table Example</h1>
+        
+        <p id="page-description" style="text-align: center;">
+            This is my first web page. I am learning now HTML.
+        </p>
+        
+
+        <hr>
+
+        <div id="main-content">
+            <!-- <table border="1"> -->
+            <table align="center">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>E-mail</th>
+                        <th>Gender</th>
+                        <th>Age</th>
+                        <th>District</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Masuma Akter</td>
+                        <td>01511223344</td>
+                        <td>example1@gmail.com</td>
+                        <td>Female</td>
+                        <td>25</td>
+                        <td>Khulna</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rashed Khan</td>
+                        <td>01511223345</td>
+                        <td>example2@gmail.com</td>
+                        <td>Male</td>
+                        <td>25</td>
+                        <td>Khulna</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kamal Khan</td>
+                        <td>01511223346</td>
+                        <td>example3@gmail.com</td>
+                        <td>Male</td>
+                        <td>25</td>
+                        <td>Dhaka</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jamal Khan</td>
+                        <td>01511223347</td>
+                        <td>example4@gmail.com</td>
+                        <td>Male</td>
+                        <td>25</td>
+                        <td>Barishal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rasheda Khan</td>
+                        <td>01511223348</td>
+                        <td>example5@gmail.com</td>
+                        <td>Female</td>
+                        <td>25</td>
+                        <td>Chittagong</td>
+                    </tr>
+
+                    <tr>
+                        <td>Shahlal Hossain</td>
+                        <td>01511223349</td>
+                        <td>example6@gmail.com</td>
+                        <td>Male</td>
+                        <td>32</td>
+                        <td>Khulna</td>
+                    </tr>
+
+                    <tr>
+                        <td>Masuma Akter</td>
+                        <td>01511223344</td>
+                        <td>example1@gmail.com</td>
+                        <td>Female</td>
+                        <td>25</td>
+                        <td>Khulna</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rashed Khan</td>
+                        <td>01511223345</td>
+                        <td>example2@gmail.com</td>
+                        <td>Male</td>
+                        <td>25</td>
+                        <td>Khulna</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kamal Khan</td>
+                        <td>01511223346</td>
+                        <td>example3@gmail.com</td>
+                        <td>Male</td>
+                        <td>25</td>
+                        <td>Dhaka</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jamal Khan</td>
+                        <td>01511223347</td>
+                        <td>example4@gmail.com</td>
+                        <td>Male</td>
+                        <td>25</td>
+                        <td>Barishal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rasheda Khan</td>
+                        <td>01511223348</td>
+                        <td>example5@gmail.com</td>
+                        <td>Female</td>
+                        <td>25</td>
+                        <td>Chittagong</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table align="center" class="table table bordered table hover table-striped table-condensed table-dark">
+                <thead>
+                    <tr>
+                        <th>SL.</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Short Description</th>
+                        <th>Picture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Watch</td>
+                        <td>Electronic Devices</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vel?</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td><img src="images/clock.png" height="50" width="50" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Watch</td>
+                        <td>Electronic Devices</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vel?</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td><img src="images/clock.png" height="50" width="50" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Watch</td>
+                        <td>Electronic Devices</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vel?</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td><img src="images/clock.png" height="50" width="50" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Watch</td>
+                        <td>Electronic Devices</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vel?</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td><img src="images/clock.png" height="50" width="50" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>Watch</td>
+                        <td>Electronic Devices</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vel?</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td><img src="images/clock.png" height="50" width="50" alt=""></td>
+                    </tr>     
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+        <!-- জাভাস্ক্রিপ্ট (JavaScript) জেকুয়েরি (jQuery) ইত্যাদি স্ক্রিপ্ট যুক্ত করার জন্য <script></script> ট্যাগ ব্যবহার করা হয়। -->
+        <!-- JavaScript Library -->
+        <script type="text/javascript" src="jquery.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="bootstrap.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="w3.js"></script> <!-- Example Only -->
+
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="myscript.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="custom.js"></script> <!-- Example Only -->
+        <script type="text/javascript" src="main.js"></script> <!-- Example Only -->
+
+
+    </body>
+</html>
+
