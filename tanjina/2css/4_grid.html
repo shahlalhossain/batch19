@@ -26,6 +26,115 @@
       padding: 20px 0;
       font-size: 30px;
     }
+    .grid-container-all {
+    display: grid;
+    /* display: inline-grid; */
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: 100px auto 200px 150px;
+    grid-template-rows: 100px 250px 80px;
+    background-color: #2196F3;
+    padding: 10px;
+    }
+    .grid-item {
+    background-color: #F06292;
+    margin:5px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    }
+    .grid-container-item-row-start {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: purple;
+    padding: 10px;
+    }
+    .grid-container-item-row-start > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    }
+    .item1 {grid-row-start: 4;}
+    .grid-container-span {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: purple;
+    padding: 10px;
+    }
+    .grid-container-span > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    }
+    .item1-span {grid-row-end: span 3;}
+    .grid-container-short-property {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: purple;
+    padding: 10px;
+    }
+    .grid-container-short-property > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    }
+    .item1-short-property {grid-row: 1 / span 2;}
+    .item1-area-specify { grid-area: header; }
+    .item2-area-specify { grid-area: menu; }
+    .item3-area-specify { grid-area: main; }
+    .item4-area-specify { grid-area: right; }
+    .item5-area-specify { grid-area: footer; }
+    .grid-container-area-specify {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    }
+    .grid-container-area-specify > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    }
+    .grid-container-short-hand-property {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: purple;
+    padding: 10px;
+    }
+    .grid-container-short-hand-property > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    }
+    .item1-short-hand-property {
+    grid-area: 2 / 1 / span 2 / span 3;
+    }
+    .grid-container-row-column-gap {
+      display: grid;
+      grid-gap:25px 50px;
+      grid-template-columns: auto auto auto;
+      background-color: #2196F3;
+      padding: 10px;
+      }
+      .grid-item-row-column-gap {
+      background-color: #D3EAFD;
+      margin:5px;
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -41,7 +150,96 @@
     <div class="item4">Right</div>
     <div class="item5">Footer</div>
   </div>
-
+  <fieldset>
+    <legend>CSS এ Grid View Layout display:grid display:inline
+    </legend>
+    <div class="grid-container-all">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+      </div>
+  </fieldset>
+  <fieldset>
+    <legend>grid এর মায়ের্ধা- row এর item গুয়ের মায়ের্ধা- পে5 কি5র্দিn Item বা ত 5ম্বর Item কি+য়ে CSS এর row কি শুরু হবে তা কি5র্ধারয়ের্ণর জান্য CSS এর grid-row-start
+      property</legend>
+    <div class="grid-container-item-row-start">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+    </div>   
+  </fieldset>
+  <fieldset>
+    <legend>grid এর মায়ের্ধা- row এর item গুয়ের মায়ের্ধা- পে5 কি5র্দিn Item পে একির্ধা row পূর্যন্ত span বা বর্ধিত রার জান্য CSS এর grid-row-end property</legend>
+    <div class="grid-container-span">
+      <div class="item1-span">1</div>
+      <div class="item2-span">2</div>
+      <div class="item3-span">3</div>
+      <div class="item4-span">4</div>
+      <div class="item5-span">5</div>
+      <div class="item6-span">6</div>
+      <div class="item7-span">7</div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>CSS grid-row-start, grid-row-end এই দুকি property এর পেয়ে5 short-hand property</legend>
+    <div class="grid-container-short-property">
+      <div class="item1-short-property">1</div>
+      <div class="item2-short-property">2</div>
+      <div class="item3-short-property">3</div>
+      <div class="item4-short-property">4</div>
+      <div class="item5-short-property">5</div>
+      <div class="item6-short-property">6</div>
+      <div class="item7-short-property">7</div>
+      </div>
+     
+  </fieldset>
+  <fieldset>
+    <legend>grid layout এর মায়ের্ধা- area specify রার জান্য CSS 3 তে grid-template-area property ব্যবহৃত হ। আর grid-template-area এর সি5য়েক্স ঠি কি5য়েEর মাতো
+      grid-template-areas: none|itemnames;</legend>
+    <div class="grid-container-area-specify">
+    <div class="item1-area-specify">Header</div>
+    <div class="item2-area-specify">Menu</div>
+    <div class="item3-area-specify">Main</div>
+    <div class="item4-area-specify">Right</div>
+    <div class="item5-area-specify">Footer</div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>CSS grid-row-start, grid-column-start, grid-row-end, grid-column-end এই Eরকি property এর পেয়ে5 short-hand property </legend>
+    <div class="grid-container-short-hand-property">
+      <div class="item1-short-hand-property">1</div>
+      <div class="item2-short-hand-property">2</div>
+      <div class="item3-short-hand-property">3</div>
+      <div class="item4-short-hand-property">4</div>
+      <div class="item5-short-hand-property">5</div>
+      <div class="item6-short-hand-property">6</div>
+      <div class="item7-short-hand-property">7</div>
+      </div>
+  </fieldset>
+  <fieldset>
+    <legend>CSS grid-row-gap, grid-column-gap এই দুকি property এর পেয়ে5 short-hand property </legend>
+    <div class="grid-container-row-column-gap">
+      <div class="grid-item-row-column-gap">1</div>
+      <div class="grid-item-row-column-gap">2</div>
+      <div class="grid-item-row-column-gap">3</div>
+      <div class="grid-item-row-column-gap">4</div>
+      <div class="grid-item-row-column-gap">5</div>
+      <div class="grid-item-row-column-gap">6</div>
+      <div class="grid-item-row-column-gap">7</div>
+      <div class="grid-item-row-column-gap">8</div>
+      <div class="grid-item-row-column-gap">9</div>
+      </div>
+     
+  </fieldset>
   </body>
 </html>
 

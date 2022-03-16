@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        .flex-container {
+        display: flex;
+        flex-direction: column;
+        background-color: DodgerBlue;
+        }
+        .flex-container > div {
+        background-color: darkorange;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
+        .flex-container-row {
+        display: flex;
+        flex-direction: row;
+        background-color: DodgerBlue;
+        }
+        .flex-container-row > div {
+        background-color: darkorange;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
+        .flex-container-row-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: DodgerBlue;
+        }
+        .flex-container-row-reverse > div {
+        background-color: darkorange;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
+        .container---flex {
+        background-color: #64B5F6;
+        margin-bottom: 10px;
+        display: flex;
+        }
+        .flex--child {
+        flex: 1;
+        min-width: 50px;
+        min-height: 50px;
+        margin: 10px;
+        background-color: #F06292;
+        }
+        .container--inline-flex {
+        background-color: #64B5F6;
+        margin-bottom: 10px;
+        display: inline-flex;
+        }
+        .flex-child {
+        flex: 1;
+        min-width: 50px;
+        min-height: 50px;
+        margin: 10px;
+        background-color: #F06292;
+        }
+        .flex-container-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: purple;
+        }
+        .flex-container-wrap>div {
+        background-color: darkorange;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
+        .flex-container-nowrap {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: purple;
+        }
+        .flex-container-nowrap>div {
+        background-color: darkorange;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
+        .flex-container-justify {
+        display: flex;
+        justify-content:center;
+        /* justify-content:flex-start; */
+        /* justify-content:flex-end; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        background-color: DodgerBlue;
+        }
+        .flex-container-justify > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
+        .flex-container-align-items {
+        display: flex;
+        /* align-items:center; */
+        /* align-items:flex-start; */
+        /* align-items:flex-end; */
+        align-items: baseline;
+        background-color: DodgerBlue;
+        }
+        .flex-container-align-items > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
+        .flex-container-align-content {
+        display: flex;
+        height: 400px;
+        flex-wrap: wrap;
+        align-content: center;
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-content: space-around; */
+        /* align-content: space-between; */
+        background-color: DodgerBlue;
+        }
+        .flex-container-align-content > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>flex-direction:column</legend>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>           
+    </fieldset>
+    <fieldset>
+        <legend>flex-direction:row</legend>
+        <div class="flex-container-row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend>flex-direction:row-reverse </legend>
+        <div class="flex-container-row-reverse">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+           
+    </fieldset>
+    <fieldset>
+        <legend>Display flex</legend>
+        <div class="container---flex">
+            <div style="flex--child"></div>
+            <div class="flex--child"></div>
+            <div class="flex--child"></div>
+            </div>
+            <div class="container---flex">
+            <div class="flex--child"></div>
+            <div class="flex--child"></div>
+            <div class="flex--child"></div>
+            </div>
+            <div class="container---flex">
+            <div class="flex--child"></div>
+            <div class="flex--child"></div>
+            <div class="flex--child"></div>
+        </div>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Display inline-flex</legend>
+        <div class="container--inline-flex">
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+            </div>
+            <div class="container--inline-flex">
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+            </div>
+            <div class="container--inline-flex">
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend>display:flex flex-wrap: wrap</legend>
+        <div class="flex-container-wrap">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend>display:flex flex-wrap: nowrap</legend>
+        <div class="flex-container-nowrap">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend>display:flex justify-content:  center flex-start flex-end space-around space-between</legend>
+        <div class="flex-container-justify">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend>display:flex align-items:  center flex-start flex-end baseline</legend>
+        <div class="flex-container-align-items">
+            <div><h1>1</h1></div>
+            <div><h6>2</h6></div>
+            <div><h3>3</h3></div>
+            <div><small>4</small></div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>display:flex align-content:  center flex-start flex-end space-around space-between</legend>
+        <h1>The align-content Property</h1>
+        <div class="flex-container-align-content">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        </div>
+    </fieldset>
+</body>
+</html>
