@@ -47,7 +47,7 @@
         <div class="container" style="border: 1px solid green">
 
                 <?php 
-                echo ("Hello Participants, Welcome to Set Training Programme");
+                echo "Hello Participants, Welcome to Set Training Programme";
                 echo "<br>";
                 echo ("Hello Participants, Welcome to Set Training Programme");
                 echo "<br>";
@@ -65,6 +65,9 @@
                 lines
                 */
 
+                include 'data_type.php';
+                echo greetings;
+                var_dump($countries[9]);
                 ?>
 
         </div>

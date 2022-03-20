@@ -43,16 +43,21 @@
         echo "<br>";
 
         // PHP Array
-        $countries = array("Bangladesh","Japan","Canada","Thailand");
+        // $countries = array("Bangladesh", "Japan", "Canada", "Thailand", "India", "German", "Spain");
+
         $countries = [
-            2 => 'Japan',
+            'country1' => 'Japan',
             3 => 105.55,
-            4 => "Thailand",
-            1 => "Bangladesh",
+            'country2' => "Thailand",
+            'country3' => "Bangladesh",
             5 => 25555,
-            6 => true
+            6 => true,
+
+            7 => ["Bangladesh", "Japan", "Canada", "Thailand", "India", "German", "Spain"],
+            8 => NULL,
+            9 => " ",
         ];
-        var_dump($countries);
+        var_dump($countries[9]);
         echo "<br>";
         echo "<br>";
         echo "<br>";
