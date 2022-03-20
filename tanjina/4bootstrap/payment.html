@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bill|bdsoft|biz|payment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawesome icon link   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+              <div class="logo-bd">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="bd logo">
+                </a>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services">Services</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link " href="payment"  >Payment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="training"  >Training</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="client"  >Our clients</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="project"  > Our projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="contact"  >Contact</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="payment-title">
+                    <div>
+                      <p>PAYMENT SYSTEM</p>
+                    <h4><a href="home">Home</a>
+                      <i class="fa fa-angle-right" aria-hidden="true" title=></i>
+                    <span>Payment System</span>
+                    </h4>
+                    </div>
+                   <div>
+                    <input type="submit" name="clientBtn" value="Client info" class="btn btn-primary clientBtn" id="clientBtn">
+                   </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <div class="payment-details">
+                        <form action="#">
+                            <div class="form-group select-option">
+                                <label for="company-name" class="col-4 col-form-label">Company Name</label>
+                                <div class="col-5 input-text">
+                                  <input name="company_name" class="form-control "  type="text"   id="participant_name" value="S.ENERGY" required readonly/>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group select-option">
+                                <label for="balance" class="col-4 col-form-label">Balance</label>
+                                <div class="col-5 input-text">
+                                  <input name="balance" class="form-control"  type="text"   id="Balance" value="0" required readonly/>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group select-option">
+                                <label for="due" class="col-4 col-form-label">Due</label>
+                                <div class="col-5 input-text">
+                                  <input name="due" class="form-control "  type="text"   id="due" value="11" required readonly/>
+                                </div>
+                               
+                            </div>
+                            <div class="form-group select-option">
+                                <label for="sl" class="col-4 col-form-label">SL</label>
+                                <div class="col-5 input-text">
+                                  <input name="sl" class="form-control "  type="text"   id="sl" value="1" required readonly/>
+                                </div>
+                                
+
+                            </div>
+                            <div class="form-group select-option">
+                                <label for="amount" class="col-4 col-form-label">Amount</label>
+                                <div class="col-5 input-text">
+                                  <p>Monthly Charge (03/2022)	</p>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group select-option">
+                              <label for="previous_due" class="col-4 col-form-label">Previous Due</label>
+                              <div class="col-5 input-text">
+                                <input name="previous_due" class="form-control "   type="text"   id="previous_due" value="11" required readonly/>
+                              </div>
+                              
+
+                          </div>
+                            <div class="form-group select-option">
+                              <label for="net_payable" class="col-4 col-form-label">Net Payable</label>
+                              <div class="col-5 input-text">
+                                <input name="net_payable" class="form-control "  type="text"   id="net_payable" value="11" required readonly/>
+                              </div>
+                             
+
+                          </div>
+                            
+                            <div class="form-group select-option">
+                                <label for="payment_type" class="col-4 col-form-label"  >Payment Type                                   
+                                </label>
+                                <div class="col-5 input-text">
+                                    <select   name="payment_type" class="form-control col-12 form-select  " id="payment_type"  required>
+                                        <option value="1"> Full</option>                                     
+                                        <option value="2"> Partial </option>
+                                             
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group select-option">
+                                <label for="payment_via" class="col-4 col-form-label "  >Payment Via                                   
+                                </label>
+                                <div class="col-5 input-text">
+                                    <select   name="payment_via" class="form-control col-12 form-select  " id="payment_via"  required>
+                                        <option value="1"> BANK ASIA LTD.</option>                                     
+                                        <option value="2"> NRBC BANK LTD. </option>
+                                        <option value="2"> bKash (Personal) </option>
+                                        <option value="2"> Nagad (Personal)</option>
+                                        <option value="2"> Rocket (Personal) </option>
+                                             
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group select-option">
+                                <label for="social_media" class="col-4 col-form-label">Account Details                    
+                                  </label>
+                                  <div class="col-5 input-text">
+                                    <input name="account_number" class="text_input form-control input-text"  type="text"  id="account_number" value="A/C: 1083326002073" readonly required />
+                                    <input name="account_title" class="text_input form-control input-text"  type="text"  id="account_title" value="A/C Title: BDSOFT IT SOLUTIONS" readonly required />
+                                    <input name="branch_principal" class="text_input form-control input-text"  type="text"  id="branch_principal" value="Branch: PRINCIPAL" readonly required />
+                                  </div>
+                                  
+                            </div>
+                            <div class="form-group select-option">
+                                <label for="service_charge" class="col-4 col-form-label">Service Charge 
+                                  </label>
+                                  <div class="col-5 input-text">
+                                    <input name="service_charge" class="text_input form-control"  type="text" " id="service_charge" value="0"  required readonly/>
+                                  </div>
+                                  
+                            </div>
+                            <div class="form-group select-option">
+                                <label for="net_payable" class="col-4 col-form-label">Net Payable   
+                                  </label>
+                                  <div class="col-5 input-text">
+                                    <input name="net_payable" class="text_input form-control"  type="text"  id="net_payable" value="11"  required readonly/>
+                                  </div>
+                                  
+                            </div>
+                            <div class="form-group select-option">
+                                <label for="ref_id" class="col-4 col-form-label">Ref. ID</label>
+                                <div class="col-5 input-text">
+                                  <input name="ref_id" class="text_input form-control"  type="text"  id="ref_id" value=""  required />
+                                </div>
+                                  
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="playNowBtn" value="Play Now" class="btn btn-primary playNowBtn" id="playNowBtn">
+                            </div>
+                        </form>
+                        <div class="skip-payment">
+                          <div>
+                            <p>Click Skip Payment. [Please complete your payment as soon as possible]</p>
+                          </div>
+                          <div>
+                            <input type="submit" name="skipBtn" value="Skip Payment" class="btn btn-danger skipBtn" id="skipBtn">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <span class='copyright'>&copy; Copyright  - 
+          © 2022 BDSOFT It Solutions | All rights reserved |
+            Designed and developed by: <a  href='#'> Tanjina Akter </a>
+          </span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js"></script>
+</body>
+</html>

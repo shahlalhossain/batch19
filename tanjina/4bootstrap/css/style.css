@@ -1,0 +1,94 @@
+.header {
+    border-bottom: 1px solid #E1E1E1;
+    background: #fff;
+}
+.logo a img{
+    width: 68px;
+    margin-top: 10px;
+}
+.main-menu li a{
+    color: #5F5F5F;
+}
+.main-menu li a:hover{
+    color: #333;
+    border-bottom: 1px solid #C3512F;
+}
+.title {
+    padding: 111px 0 0;
+}
+.select-option{
+    display:flex;
+}
+.participate-details form input {
+    margin: 10px 0;
+}
+
+.participate-details select {
+    margin: 10px 0;
+}
+.footer{
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 15px;
+}
+.footer span a{
+    color: #fff;
+    text-decoration: none;
+}
+/* payment  css  */
+.payment-details {
+    padding: 50px;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.logo-bd a img {
+    width: 160px;
+}
+
+.menu li a {
+    font-size: 22px;
+    color: #282828;
+}
+
+.payment-title {
+    padding-top: 97px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 42px;
+}
+.menu li a:hover{
+    color: #009BDF;
+    border-bottom: 2px solid #009BDF;
+}
+.payment-title p {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.payment-title h4 a {
+    text-decoration: none;
+    /* color: #282828; */
+}
+
+.payment-title h4 {
+    font-size: 20px;
+}
+.input-text{
+    margin: 10px 0;
+}
+.skip-payment {
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 50px;
+}
+.playNowBtn {
+    float: right;
+    margin-right: 245px;
+}
+
+.skipBtn {
+    margin-left: 10px;
+}
