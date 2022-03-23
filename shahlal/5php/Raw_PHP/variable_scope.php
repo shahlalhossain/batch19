@@ -28,12 +28,13 @@
             <?php
 
             $number1 = "555555555"; // global scope
-            function myTest($number1) {
+            function myTest1($number1) {
                 // using $number1 inside this function will generate an error
-                        echo "<p>Variable number1 inside function is: $number1</p>";
+                echo "<p>Variable number1 inside function is: $number1</p>";
             }
-            myTest($number1);
+            myTest1($number1);
             echo "<p>Variable number1 outside function is: $number1</p>";
+
 
             function myTest2() {
                 $x = 5000; // local scope
